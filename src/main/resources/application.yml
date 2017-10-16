@@ -1,0 +1,15 @@
+#put actual values in application-default.yml, which is .gitignore-d
+serviceBus:
+  client-id: 2910b53a-460a-422c-aa2e-faa46b651c21
+  host: testSampleServicebus.servicebus.windows.net
+  sharedAccessPolicyName: RootManageSharedAccessKey
+  sharedAccessPolicyKey: DGRJwhuIKTrM/w3BQJPvirQiyCJCjWl3fJjC9hGG5m8=
+
+spring:
+  jms:
+    pub-sub-domain: true #sets up Spring's JmsTemplate to be able to publish to topics
+
+
+logging:
+  level:
+    org.apache.qpid: TRACE
